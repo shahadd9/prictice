@@ -26,6 +26,7 @@ public class MainActivity4 extends AppCompatActivity {
     private ArrayList<String> tDays;
     private TextView days;
     String txt;
+
     boolean isChoose;
 
     @Override
@@ -154,14 +155,14 @@ public class MainActivity4 extends AppCompatActivity {
         txt= (String) btn.getText();
         if(c%2==1){
             btn.setBackgroundColor(Color.parseColor("#ED0B8A"));
-            tDays.add(txt);
-            days.setText(tDays.toString()+ tDays.size());
+           // tDays.add(txt);
+            //days.setText(tDays.toString()+ tDays.size());
 
         }
         else {
             btn.setBackgroundColor(Color.parseColor("#E3C6D0"));
-             tDays.remove(txt);
-            days.setText(tDays.toString()+ tDays.size());
+           //  tDays.remove(txt);
+            // days.setText(tDays.toString()+ tDays.size());
 
         }
     }
