@@ -6,96 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity5">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="64dp"
-        android:layout_height="62dp"
-        android:backgroundTint="#E3C6D0"
-        android:text="Button"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="294dp" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="64dp"
-        android:layout_height="62dp"
-        android:backgroundTint="#E3C6D0"
-        android:text="Button"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="294dp" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="64dp"
-        android:layout_height="62dp"
-        android:backgroundTint="#E3C6D0"
-        android:text="Button"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="294dp" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="64dp"
-        android:layout_height="62dp"
-        android:backgroundTint="#E3C6D0"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.884"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
-
-    <Button
-        android:id="@+id/monBtn"
-        android:layout_width="64dp"
-        android:layout_height="62dp"
-        android:backgroundTint="#E3C6D0"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.354"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
-
     <TextView
-        android:id="@+id/trainingDayslbl"
-        android:layout_width="221dp"
-        android:layout_height="45dp"
-        android:text="Pick training days"
+        android:id="@+id/exPId"
+        android:layout_width="290dp"
+        android:layout_height="43dp"
+        android:text="Where do you exercise?  "
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158" />
+        app:layout_constraintVertical_bias="0.202" />
 
     <Button
-        android:id="@+id/sunBtn_C3C3C3"
-        android:layout_width="64dp"
-        android:layout_height="62dp"
-        android:backgroundTint="#E3C6D0"
-        android:text="Button"
+        android:id="@+id/homeBtn"
+        android:layout_width="209dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#EDEDED"
+        android:paddingEnd="100dp"
+        android:text="Home"
+        android:textColor="#000000"
+        app:cornerRadius="20dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.304" />
+        app:layout_constraintVertical_bias="0.424" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="64dp"
-        android:layout_height="62dp"
-        android:backgroundTint="#E3C6D0"
-        android:text="Button"
+        android:id="@+id/gymBtn"
+        android:layout_width="209dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#EDEDED"
+        android:paddingEnd="100dp"
+        android:text="Gym"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.613"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
+        app:layout_constraintVertical_bias="0.577" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="46dp"
+        android:layout_height="43dp"
+        android:translationZ="9dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/homeBtn"
+        app:layout_constraintEnd_toEndOf="@+id/homeBtn"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="@+id/homeBtn"
+        app:layout_constraintTop_toTopOf="@+id/homeBtn"
+        app:srcCompat="@drawable/homeicon" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:translationZ="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gymBtn"
+        app:layout_constraintEnd_toEndOf="@+id/gymBtn"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="@+id/gymBtn"
+        app:layout_constraintTop_toTopOf="@+id/gymBtn"
+        app:srcCompat="@drawable/dumbbellicon" />
 </androidx.constraintlayout.widget.ConstraintLayout>

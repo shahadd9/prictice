@@ -10,14 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practice">
         <activity
-            android:name=".MainActivity5"
+            android:name=".MainActivity6"
             android:exported="true" />
         <activity
             android:name=".MainActivity4"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity3" />
+        <activity
+            android:name=".MainActivity5"
+            android:exported="true"
+            android:parentActivityName=".MainActivity4" />
         <activity
             android:name=".MainActivity3"
-            android:exported="true" /> <!-- <activity -->
+            android:exported="true"
+            android:parentActivityName=".MainActivity2" /> <!-- <activity -->
         <!-- android:name=".MainActivity2" -->
         <!-- android:exported="true" /> -->
         <activity
