@@ -146,7 +146,7 @@ public class MainActivity4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(tDays.size()>=2){
-                    goReminder();
+                    goEqupment();
                 }
             }
         });
@@ -166,7 +166,7 @@ public class MainActivity4 extends AppCompatActivity {
 
         }
     }
-    public void goReminder(){
+    public void goEqupment(){
         Intent intent= new Intent(this, MainActivity5.class);
         startActivity(intent);
     }

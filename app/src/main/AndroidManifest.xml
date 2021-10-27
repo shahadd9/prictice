@@ -11,7 +11,8 @@
         android:theme="@style/Theme.Practice">
         <activity
             android:name=".MainActivity6"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity5"/>
         <activity
             android:name=".MainActivity4"
             android:exported="true"
