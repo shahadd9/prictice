@@ -9,19 +9,19 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 public class MainActivity3 extends AppCompatActivity {
-
-    Button pickDaysBtn;
+    private int level;
+    private Button pickDaysBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
-pickDaysBtn=findViewById(R.id.pickDaysBtn);
+        pickDaysBtn=findViewById(R.id.pickDaysBtn);
         SeekBar seekBar = (SeekBar)findViewById(R.id.lvlSeekBar);
         final TextView seekBarValue = (TextView)findViewById(R.id.seekBarValue);
         TextView tLvl= findViewById(R.id.lvl);
+        level=2;
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
-
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress,
                                           boolean fromUser) {
@@ -30,12 +30,15 @@ pickDaysBtn=findViewById(R.id.pickDaysBtn);
                 int lvl=progress;
                 if(lvl<=33){
                     tLvl.setText("Beginner");
+                    level=1;
                 }
                 else if(lvl>33 && lvl<= 66){
                     tLvl.setText("Intermediate");
+                    level=2;
                 }
                 else{
                     tLvl.setText("Professional");
+                    level=3;
 
                 }
             }
@@ -64,6 +67,10 @@ pickDaysBtn=findViewById(R.id.pickDaysBtn);
     public void goTrainingDays(){
         Intent intent= new Intent(this, MainActivity4.class);
         startActivity(intent);
+    }
+    public int getLevel(){
+
+        return level;
     }
 
 }

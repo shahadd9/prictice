@@ -15,7 +15,7 @@ public class MainActivity4 extends AppCompatActivity {
 
     private Button sun,mon,tue,wed,thur,fri,sat,next;
     private TextView tLbl,lbl;
-    int count;
+    private int count;
     private int sunCount;
     private int monCount;
     private int tueCount;
@@ -25,9 +25,10 @@ public class MainActivity4 extends AppCompatActivity {
     private int satCount;
     private ArrayList<String> tDays;
     private TextView days;
-    String txt;
-
-    boolean isChoose;
+    private TextView tip;
+    private String txt;
+    private MainActivity3 Tlevel;
+    private boolean isChoose;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,14 @@ public class MainActivity4 extends AppCompatActivity {
          isChoose=false;
         tDays= new ArrayList<>();
         count=0;
+        tip= findViewById(R.id.biggenerTip);
+        Tlevel= new MainActivity3();
+
+        if(Tlevel.getLevel() == 1){
+
+            tip.setText("Tip: 2-3 sessions a week are recommended for beginner"+ Tlevel.getLevel());
+        }
+
 
         sun.setOnClickListener(new View.OnClickListener() {
             @Override
