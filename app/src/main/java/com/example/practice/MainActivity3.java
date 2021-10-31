@@ -19,7 +19,7 @@ public class MainActivity3 extends AppCompatActivity {
         SeekBar seekBar = (SeekBar)findViewById(R.id.lvlSeekBar);
         final TextView seekBarValue = (TextView)findViewById(R.id.seekBarValue);
         TextView tLvl= findViewById(R.id.lvl);
-        level=2;
+        level=0;
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
             @Override

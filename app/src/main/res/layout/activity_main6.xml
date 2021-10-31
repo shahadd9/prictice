@@ -8,9 +8,9 @@
 
     <TextView
         android:id="@+id/equlbl"
-        android:layout_width="290dp"
-        android:layout_height="43dp"
-        android:text="Where do you exercise?  "
+        android:layout_width="355dp"
+        android:layout_height="51dp"
+        android:text="What equipment do you have?"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202"  />
+        app:layout_constraintVertical_bias="0.202" />
 
     <CheckBox
         android:id="@+id/dumbble"
@@ -269,4 +269,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.947"
         tools:ignore="TextContrastCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
